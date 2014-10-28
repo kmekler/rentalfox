@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  landlord: MyString
+  building: MyString
+  unit: MyString
+  area: 1.5
+
+two:
+  landlord: MyString
+  building: MyString
+  unit: MyString
+  area: 1.5

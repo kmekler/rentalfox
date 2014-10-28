@@ -1,0 +1,9 @@
+<center><h1> RentalFox </h1></center>
+
+<ol>
+	<% @reviews.each do |r| %>
+	<li>
+	<strong>Landlord:</strong> <%= r.landlord %> <br> <strong>Building:</strong> <%= r.building %> <br> <strong>Unit:</strong> <%= r.unit %> <br> <strong>Area:</strong><%= r.area %>
+	</li>
+	<% end %>
+</ol>
