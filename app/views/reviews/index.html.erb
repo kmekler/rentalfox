@@ -1,9 +1,14 @@
 <center><h1> RentalFox </h1></center>
-
-<ol>
-	<% @reviews.each do |r| %>
-	<li>
-	<strong>Landlord:</strong> <%= r.landlord %> <br> <strong>Building:</strong> <%= r.building %> <br> <strong>Unit:</strong> <%= r.unit %> <br> <strong>Area:</strong><%= r.area %>
-	</li>
-	<% end %>
-</ol>
+<body>
+	<ol>
+		<% @reviews.each do |review| %>
+		<li>
+			<strong>Landlord:</strong> <%= review.landlord %> <br> 
+			<strong>Building:</strong> <%= review.building %> <br> 
+			<strong>Unit:</strong> <%= review.unit %> <br> 
+			<strong>Area:</strong><%= review.area %></li>
+        	<li><%= link_to 'Edit', edit_review_path(review) %></li>
+        	<li><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+		</li>
+		<% end %>
+	</ol>
