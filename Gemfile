@@ -4,6 +4,9 @@ gem 'mongoid'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
+#Gemfile to enable the REPL and local/instance variable inspection.
+gem 'binding_of_caller'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

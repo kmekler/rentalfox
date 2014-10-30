@@ -1,14 +1,22 @@
-<center><h1> RentalFox </h1></center>
-<body>
-	<ol>
+<body class="background">
+	<div class="body">
+		<center>
+			<h1 class="title"> RentalFox </h1><br>
+		</center>
+		<p>
+			<center><%= link_to 'Add a Review', new_review_path %></center>
+		</p>
+
 		<% @reviews.each do |review| %>
-		<li>
-			<strong>Landlord:</strong> <%= review.landlord %> <br> 
-			<strong>Building:</strong> <%= review.building %> <br> 
+		<p class="text">
+			<strong>Landlord:</strong> <%= review.landlord %> <br>
+			<strong>Building:</strong> <%= review.building %><br>
 			<strong>Unit:</strong> <%= review.unit %> <br> 
 			<strong>Area:</strong><%= review.area %></li>
-        	<li><%= link_to 'Edit', edit_review_path(review) %></li>
-        	<li><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-		</li>
-		<% end %>
-	</ol>
+        	<center><p><%= link_to 'Edit', edit_review_path(review) %></p></center>
+        	<center><p><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %> </p></center>
+		<% end %>		
+		</p>
+	</div>	
+</body>	
+

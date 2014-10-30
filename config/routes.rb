@@ -1,22 +1,22 @@
 Rentalfox::Application.routes.draw do
-  #root 'reviews#index'
-  resources :reviews
+  root 'reviews#index'
+  # resources :reviews
 
-  # get 'reviews_index/', to: 'reviews#index'
+  get 'reviews/', to: 'reviews#index', as: :review
 
-  # get 'new/reviews', to: 'reviews#new'
+  post 'reviews/', to: 'reviews#create'
 
-  # get 'reviews/:id', to: 'reviews#show', as: 'reviews'
+  get 'reviews/new', to: 'reviews#new',         as: :new_review
 
-  # post 'reviews/', to: 'reviews#create'
+  get 'reviews/:id/edit', to: 'reviews#edit',   as: :edit_review
 
-  # get 'reviews/:id/edit', to: 'reviews#edit', as: 'edit_review'
+  get 'reviews/:id', to: 'reviews#show',        as: :show_reviews
 
-  # put 'reviews/:id', to: 'reviews#update'
+  patch 'reviews/:id', to: 'reviews#update',     as: :save_review
 
-  # patch 'reviews/:id', to: 'reviews#update'
+  put 'reviews/:id', to: 'reviews#update'
 
-  # delete 'reviews/:id', to: 'reviews#destroy'
+  delete 'reviews/:id', to: 'reviews#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
