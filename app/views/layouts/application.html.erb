@@ -15,7 +15,6 @@
 	      <ul class="nav navbar-nav">
 	        <li><a href="http://localhost:3000/reviews">RentalFox</a></li>
 	        <li><a href="http://localhost:3000/reviews/new">Post a Review</a></li>
-	        <li><a href="#">Read a Review</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
@@ -24,7 +23,12 @@
 	            <li><a href="#">Profile</a></li>
 	            <li><a href="#">Settings</a></li>
 	            <li class="divider"></li>
-	            <li><a href="#">Log Out</a></li>
+	            <% if current_user %>
+	            	<li><%= link_to "Log Out", session_path, method: :delete %></li>
+	            <% else  %>
+	            	<li><%= link_to "Login", new_session_path %></li>
+	            	<li><%= link_to "Create Account", new_user_path %></li>
+	            <% end %>	
 	          </ul>
 	        </li>
 	      </ul>

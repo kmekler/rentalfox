@@ -14,11 +14,15 @@ $mainfont: 'Raleway';
 }
 
 .body {
-	background-color: rgba(214,179,244, 0.7);
-	margin-top: 60px;
-	margin-left: 250px;
+	background-color: rgba(214,179,244, 0.8);
+	margin-top: 100px;
 	width: 650px;
 	border-radius: 25px;
+}
+
+.body_positioning {
+	margin-top: 100px;
+	margin-left: 300px;	
 }
 
 .title {
@@ -30,4 +34,8 @@ $mainfont: 'Raleway';
 .text {
 	font-family: $mainfont, black;
 	margin-left: 30px;
+}
+
+.new_positioning {
+	margin-left: 0 auto;
 }

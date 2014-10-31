@@ -1,6 +1,8 @@
 Rentalfox::Application.routes.draw do
   root 'reviews#index'
   # resources :reviews
+  resources :users, except:[:show]
+  resource :session, only:[:create, :destroy, :new]
 
   get 'reviews', to: 'reviews#index', as: :reviews
 
