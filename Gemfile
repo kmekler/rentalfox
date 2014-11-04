@@ -6,8 +6,8 @@ gem 'rails', '4.0.4'
 
 #Gemfile to enable the REPL and local/instance variable inspection.
 gem 'binding_of_caller'
-
-
+# Use rails_12factor gem
+gem 'rails_12factor'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
