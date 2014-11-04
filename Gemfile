@@ -34,7 +34,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'better_errors'
+group :development do
+	gem 'better_errors'
+	gem 'pry-rails'
+end
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 # Use ActiveModel has_secure_password
