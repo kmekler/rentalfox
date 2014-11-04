@@ -52,3 +52,5 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ ruby '2.1.2'
