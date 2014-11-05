@@ -1,22 +1,14 @@
 <body class="background">
-	<div class="body" class="body_positioning">
-		<center>
-			<h1 class="title"> RentalFox </h1><br>
-		</center>
-		<p>
+	<div class="body">
+		<div class="text">
+			<center><h1 class="title"> RentalFox </h1></center>
+				<center><h3 class="reviews_by_address"> Reviews by Address: </h3><br></center>			
+					<% @reviews.each do |review| %>
+					<center><%= review.address %> <br><center>
+					<center><p><%= link_to 'See more', review_path(review) %></p></center>
+				<% end %>
 			<center><%= link_to 'Add a Review', new_review_path %></center>
-		</p>
-
-		<% @reviews.each do |review| %>
-		<p class="text">
-			<strong>Landlord:</strong> <%= review.landlord %> <br>
-			<strong>Building:</strong> <%= review.building %><br>
-			<strong>Unit:</strong> <%= review.unit %> <br> 
-			<strong>Area:</strong><%= review.area %></li>
-        	<center><p><%= link_to 'Edit', edit_review_path(review) %></p></center>
-        	<center><p><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %> </p></center>
-		<% end %>		
-		</p>==
+		</div>
 	</div>	
 </body>	
 

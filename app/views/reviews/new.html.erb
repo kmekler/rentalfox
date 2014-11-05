@@ -1,18 +1,22 @@
-<body class="body" class="new_positioning">	
-	<h1 class="title">Add a Review</h1>
-	<%= form_for @review do |f| %>
-		Landlord: <%= f.text_field :landlord %>
-		<br><br>
-		Building: <%= f.text_field :building %>
-		<br><br>
-		Unit: <%= f.text_field :unit %>
-		<br><br>
-		Area: <%= f.text_field :area %>
-		<br><br>
-
+<body class="background">	
+	<div class="body">
+		<h1 class="title">Add a Review</h1>
+		<%= form_for @review do |f| %>
+			Address: <%= f.text_field :address %>
+			<br><br>
+			Landlord: <%= f.text_field :landlord %>
+			<br><br>
+			Building: <%= f.text_field :building %>
+			<br><br>
+			Unit: <%= f.text_field :unit %>
+			<br><br>
+			Area: <%= f.text_field :area %>
+			<br><br>
+		
 		<%= f.submit "Add review!" %>
 
 	<% end %>
 
 	<%=link_to "Back", reviews_path %>
+	</div>
 </body>	

@@ -1,8 +1,9 @@
-<%= form_for @user do |f| %>
-
-	<%= f.text_field :email %>
-	<%= f.password_field :password %>
-	<%= f.password_field :password_confirmation %>
-	<%= f.submit "Update" %>
-
+<div class="background"><%= form_for @user do |f| %>
+	<div class="body">
+		Email: <%= f.text_field :email %>
+		Password: <%= f.password_field :password %>
+		Confirm Password: <%= f.password_field :password_confirmation %>
+		<%= f.submit "Update" %>
+	</div>
 <% end %>
+</div>

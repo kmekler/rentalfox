@@ -1,17 +1,19 @@
-<body class="body">
+<body class="background">
+	<div class="body">
 	<h1 class="title">Edit this review!</h1>
 
 	<%= form_for @review do |f| %>
-	
+		Address: <%= f.text_field :address %>
 		Landlord: <%= f.text_field :landlord %>
 		Building: <%= f.text_field :building %>
 		Unit: <%= f.text_field :unit %>
 		Area: <%= f.text_field :area %>
-
+		
 		<%= f.submit "Save review!" %>
 
 
 	<% end %>	
 
-	<%= link_to "Back to the list!", review_path %>
+	<%= link_to "Back to the list!", reviews_path %>
+	</div>	
 </body>	

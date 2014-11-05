@@ -2,6 +2,16 @@
 
 $mainfont: 'Raleway';
 
+.navbar {
+	font-family: $mainfont, black;
+	margin-bottom: 100px;
+}
+
+.glyph {
+	position: absolute;
+	top: 13px;
+}
+
 .background {
 	background-image: url(apartments.jpg);
 	background-repeat: no-repeat;
@@ -15,27 +25,28 @@ $mainfont: 'Raleway';
 
 .body {
 	background-color: rgba(214,179,244, 0.8);
-	margin-top: 100px;
-	width: 650px;
+	width: 50%;
+	height: 70%;
 	border-radius: 25px;
-}
-
-.body_positioning {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 100px;
-	margin-left: 300px;	
 }
 
 .title {
 	font-family: $mainfont, black;
-	margin-top: 80px;
+	margin-top: 100px;
 	padding-top: 30px;
+	
+}
+
+.reviews_by_address {
+	font-family: $mainfont, black;
+	margin-top: 30px;
+	padding-top: 0px;
 }
 
 .text {
 	font-family: $mainfont, black;
-	margin-left: 30px;
-}
-
-.new_positioning {
-	margin-left: 0 auto;
+	// margin-left: 30px;
 }

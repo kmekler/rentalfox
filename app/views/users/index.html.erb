@@ -1,7 +1,9 @@
-<% @users.each do |u| %>
-
-	<%= u.email %><br>
+<div class="background"><% @users.each do |u| %>
+	<div class="body">
+		<%= u.email %><br>
 
 <% end %>
 
-<%= link_to "Add new user", new_user_path %>
+	<%= link_to "Add new user", new_user_path %>
+	</div>
+</div>
