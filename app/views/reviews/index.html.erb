@@ -5,7 +5,7 @@
 				<center><h2 class="heading"> Reviews by Address: </h2><br></center>		
 
 					<% @reviews.each do |review| %>
-					<center><%= review.address %> <br><center>
+					<center><p class="hover"><%= review.address %></p><center>
 					<center><p><%= link_to 'See more', review_path(review) %></p></center>
 				<% end %>
 				<% if @back == 1 %>
