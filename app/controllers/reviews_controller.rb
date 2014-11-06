@@ -4,7 +4,7 @@ def index
 	
 	if params[:address]
 	  @reviews = Review.where(:'address' => params[:address]) 
-	  
+
 	  @back = 1
     else
 	  @reviews =  Review.all

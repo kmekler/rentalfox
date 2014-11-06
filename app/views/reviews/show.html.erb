@@ -10,8 +10,8 @@
 			<strong>Area:</strong> <br><br><%= @review.area %>
 			<br><br>
 			<div class = "links">
-        		<center><p><%= link_to 'Edit this review', edit_review_path %></p></center>
-        		<center><p><%= link_to 'Delete this review', @review, method: :delete, data: { confirm: 'Are you sure?' } %> </p></center>
+        		<center><%= link_to 'Edit this review', edit_review_path %></center>
+        		<center><%= link_to 'Delete this review', @review, method: :delete, data: { confirm: 'Are you sure?' } %></center>
 				<%= link_to "Back to the list", reviews_path %>
 			</div>
 		</p></center>	

@@ -1,8 +1,9 @@
 <div class="background"><%= form_for @user do |f| %>
-	<div class="body">
+	<div class="login">
+	<br><br>	
 	Email: <%= f.text_field :email %>
 	Password: <%= f.password_field :password %>
-	Confirm Password:<%= f.password_field :password_confirmation %>
+	Confirm Password:<%= f.password_field :password_confirmation %><br><br>
 	<%= f.submit "Sign up" %>
 	
 <% end %>

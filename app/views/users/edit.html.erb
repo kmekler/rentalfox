@@ -1,8 +1,10 @@
 <div class="background"><%= form_for @user do |f| %>
-	<div class="body">
+	<div class="login">
+		<br><br>
+		<h2 class="heading">Change your email and/or password!</h2>
 		Email: <%= f.text_field :email %>
 		Password: <%= f.password_field :password %>
-		Confirm Password: <%= f.password_field :password_confirmation %>
+		Confirm Password: <%= f.password_field :password_confirmation %><br><br>
 		<%= f.submit "Update" %>
 	</div>
 <% end %>

@@ -21,7 +21,7 @@
 	      	<form  method="post" action="reviews/filter" class="navbar-form navbar-left" role="search">
   				<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
   				<div class="form-group">
-    				<input type="text" action='filter' name="address" class="form-control" placeholder="Search by zip code">
+    				<input type="text" action='filter' name="address" class="form-control" placeholder="Search by address">
   				</div>
   				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
@@ -45,7 +45,7 @@
 </nav>
 	<%#= image_tag("fox.png", :alt => "fox", :size => "100x100") %>
 <%#= image_tag("apartments.jpg", :alt => "apartment", :size => "1500x1000") %>
-
+<center><h1 class="title"> RentalFox </h1></center>
 <%= yield %>
 
 </body>
