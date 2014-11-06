@@ -1,11 +1,24 @@
 class ReviewsController < ApplicationController
 
 def index
-	@reviews = Review.all
+	
+	if params[:address]
+	  @reviews = Review.where(:'address' => params[:address]) 
+	  
+	  @back = 1
+    else
+	  @reviews =  Review.all
+	  @back = nil
+    end
  end	
 
 def show 
 	@review = Review.find(params[:id])
+end
+
+def filter
+   
+   redirect_to reviews_path(:address => params[:address])
 end
 
 def new

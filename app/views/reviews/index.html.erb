@@ -2,12 +2,15 @@
 	<div class="body">
 		<div class="text">
 			<center><h1 class="title"> RentalFox </h1></center>
-				<center><h3 class="reviews_by_address"> Reviews by Address: </h3><br></center>			
+				<center><h3 class="reviews_by_address"> Reviews by Address: </h3><br></center>		
+
 					<% @reviews.each do |review| %>
 					<center><%= review.address %> <br><center>
 					<center><p><%= link_to 'See more', review_path(review) %></p></center>
 				<% end %>
-			<center><%= link_to 'Add a Review', new_review_path %></center>
+				<% if @back == 1 %>
+			       <center><%= link_to 'Back', reviews_path %></center>
+			    <% end %>
 		</div>
 	</div>	
 </body>	

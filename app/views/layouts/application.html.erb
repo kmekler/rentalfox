@@ -14,13 +14,14 @@
   		<div class="container">
 	      <ul class="nav navbar-nav">
 	      	<li class="glyph"><span class="glyphicon glyphicon-stats"></span></li>
-	        <li><a href="http://localhost:3000/reviews">RentalFox</a></li>
-	        <li><a href="http://localhost:3000/reviews/new">Post a Review</a></li>
+	        <li><a href="/reviews">RentalFox</a></li>
+	        <li><a href="/reviews/new">Post a Review</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	      	<form class="navbar-form navbar-left" role="search">
+	      	<form  method="post" action="reviews/filter" class="navbar-form navbar-left" role="search">
+  				<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
   				<div class="form-group">
-    				<input type="text" class="form-control" placeholder="Search by zip code">
+    				<input type="text" action='filter' name="address" class="form-control" placeholder="Search by zip code">
   				</div>
   				<button type="submit" class="btn btn-default">Submit</button>
 			</form>

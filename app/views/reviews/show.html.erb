@@ -2,15 +2,18 @@
 	<div class="body">
 		<center><p class="text">
 
-			Address: <%= @review.address %> <br>
-			Landlord: <%= @review.landlord %> <br>
-			Building: <%= @review.building %><br>
-			Unit: <%= @review.unit %> <br> 
-			Area: <%= @review.area %>
-        	<center><p><%= link_to 'Edit this review', edit_review_path %></p></center>
-        	<center><p><%= link_to 'Delete this review', @review, method: :delete, data: { confirm: 'Are you sure?' } %> </p></center>
-		
-		<%= link_to "Back to the list", reviews_path %>
+			<br><br>
+			<strong>Address:</strong> <br><br><%= @review.address %> <br><br>
+			<strong>Landlord:</strong> <br><br><%= @review.landlord %> <br><br>
+			<strong>Building:</strong> <br><br><%= @review.building %><br><br>
+			<strong>Unit:</strong> <br><br><%= @review.unit %> <br><br>
+			<strong>Area:</strong> <br><br><%= @review.area %>
+			<br><br>
+			<div class = "links">
+        		<center><p><%= link_to 'Edit this review', edit_review_path %></p></center>
+        		<center><p><%= link_to 'Delete this review', @review, method: :delete, data: { confirm: 'Are you sure?' } %> </p></center>
+				<%= link_to "Back to the list", reviews_path %>
+			</div>
 		</p></center>	
 	</div>	
 </body>	

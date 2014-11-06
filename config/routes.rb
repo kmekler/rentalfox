@@ -4,8 +4,10 @@ Rentalfox::Application.routes.draw do
   resources :users, except:[:show]
   resource :session, only:[:create, :destroy, :new]
 
-  get 'reviews', to: 'reviews#index', as: :reviews
-
+  get 'reviews', to: 'reviews#index', as: :reviews 
+  post 'reviews/filter', to: 'reviews#filter'
+  #post 'reviews/filter', to: 'reviews#filter'
+  
   post 'reviews', to: 'reviews#create'
 
   get 'reviews/new', to: 'reviews#new',         as: :new_review
