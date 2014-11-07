@@ -1,19 +1,19 @@
 <body class="background">
 	<div class="body">
 	<h1 class="heading">Edit this review!</h1>
-
-	<%= form_for @review do |f| %>
-		Address: <%= f.text_field :address %>
-		Landlord: <%= f.text_field :landlord %>
-		Building: <%= f.text_field :building %>
-		Unit: <%= f.text_field :unit %>
-		Area: <%= f.text_field :area %>
+		<div class="text">
+			<%= form_for @review do |f| %>
+				Address: <br><%= f.text_field :address %><br><br>
+				Landlord: <br><%= f.text_field :landlord %><br><br>
+				Building: <br><%= f.text_field :building %><br><br>
+				Unit: <br><%= f.text_field :unit %><br><br>
+				Area: <br><%= f.text_field :area %><br><br>
 		
-		<%= f.submit "Save review!" %>
+			<%= f.submit "Save review!" %><br><br>
 
 
-	<% end %>	
-
-	<%= link_to "Back to the list!", reviews_path %>
+			<% end %>	
+		<%= link_to "Back to the list!", reviews_path %>
+		</div>
 	</div>	
 </body>	
