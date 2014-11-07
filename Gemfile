@@ -2,6 +2,13 @@ source 'https://rubygems.org'
 
 gem 'mongoid'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+#pa-pa-pa-paperclip!
+gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"
+
+gem 'aws-sdk', '~> 1.3.4'
+
+# Rails version
 gem 'rails', '4.0.4'
 
 #Gemfile to enable the REPL and local/instance variable inspection.
