@@ -1,8 +1,9 @@
 <body class="background">	
 	<div class="body">
 		<h1 class="heading">Add a Review</h1><br>
-			<div class="text"
+			<div class="text">
 				<%= form_for @review do |f| %>
+
 					Address: <br><%= f.text_field :address %>
 					<br><br>
 					Landlord: <br><%= f.text_field :landlord %>
@@ -13,10 +14,13 @@
 					<br><br>
 					Area: <br><%= f.text_field :area %>
 					<br><br>
+					Add a Picture: <br><%= f.file_field :avatar %>
+					<br><br>
+
 				<%= f.submit "Add review!" %>
 			<br><br>
 		<% end %>
-
+			</div>
 	<%=link_to "Back", reviews_path %>
 	</div>
 </body>	

@@ -1,7 +1,3 @@
-production:
-    sessions:
-      default:
-        uri: <%= ENV['MONGOHQ_URL'] %>
 development:
   # Configure available database sessions. (required)
   sessions:
@@ -45,7 +41,6 @@ development:
 
     # Protect id and type from mass assignment. (default: true)
     # protect_sensitive_fields: true
-
 
     # Raise an error when performing a #find and the document is not found.
     # (default: true)

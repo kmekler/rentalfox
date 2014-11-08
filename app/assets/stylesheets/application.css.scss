@@ -42,7 +42,7 @@ $mainfont: 'Raleway';
 .body {
 	background-color: rgba(214,179,244, 0.8);
 	width: 50%;
-	height: 90%;
+	height: 95%;
 	border-radius: 25px;
 	margin-left: auto;
 	margin-right: auto;
@@ -83,4 +83,10 @@ p:hover {
 .links {
 	display: inline-block;
 
+}
+
+.image {
+	img {
+		border-radius: 20px;
+	}
 }
