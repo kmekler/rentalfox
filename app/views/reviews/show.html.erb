@@ -1,6 +1,6 @@
 <body class="background">
 	<div class="body">
-		<center><p class="text">
+		<center><div class="text">
 
 			<br><br>
 			<strong>Address:</strong> <br><br><%= @review.address %> <br><br>
@@ -15,6 +15,6 @@
         		<center><%= link_to 'Delete this review', @review, method: :delete, data: { confirm: 'Are you sure?' } %></center>
 				<%= link_to "Back to the list", reviews_path %>
 			</div>
-		</p></center>	
+		</div></center>	
 	</div>	
 </body>	
