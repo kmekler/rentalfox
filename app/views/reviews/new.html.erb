@@ -14,13 +14,14 @@
 					<br><br>
 					Area: <br><%= f.text_field :area %>
 					<br><br>
-					Add a Picture: <br><%= f.file_field :avatar %>
+					<center>Add a Picture: <br><br></center>
+						<div class="addpicture"><%= f.file_field :avatar %></div>
 					<br><br>
 
 				<%= f.submit "Add review!" %>
 			<br><br>
 		<% end %>
 			</div>
-	<%=link_to "Back", reviews_path %>
+	<center><%=link_to "Back", reviews_path %></center>
 	</div>
 </body>	
