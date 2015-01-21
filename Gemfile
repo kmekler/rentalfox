@@ -7,6 +7,8 @@ gem 'mongoid'
 gem "mongoid-paperclip", "~> 0.0.8", :require => "mongoid_paperclip"
 
 gem 'aws-sdk', '~> 1.3.4'
+# aws s3
+gem 'aws-s3'
 
 # Rails version
 gem 'rails', '4.0.4'

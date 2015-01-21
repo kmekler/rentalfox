@@ -26,7 +26,7 @@ def new
 end
 
 def create
-	@review = Review.new(params.require(:review).permit(:address, :landlord, :building, :unit, :area, :avatar))
+	@review = Review.new(params.require(:review).permit(:address, :landlord, :building, :unit, :area))
 
 	if @review.save
 		redirect_to reviews_path
@@ -41,7 +41,7 @@ end
 
 def update
 	@review = Review.find(params[:id])
-	if @review.update_attributes(params.require(:review).permit(:address, :landlord, :building, :unit, :area, :avatar))
+	if @review.update_attributes(params.require(:review).permit(:address, :landlord, :building, :unit, :area))
 		redirect_to reviews_path
 	else
 		render 'edit'

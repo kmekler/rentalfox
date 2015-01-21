@@ -18,6 +18,7 @@ class UsersController < ApplicationController
 		end
 	end
 
+
 	def edit
 		@user = User.where(id:params[:id]).first
 	end

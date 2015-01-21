@@ -2,7 +2,6 @@ class User
   include Mongoid::Document
   include ActiveModel::SecurePassword
 
-  has_many :photos
 
   field :email, type: String
 
